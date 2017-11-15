@@ -15,6 +15,8 @@ print("""\n
      The Requested Reports Are Listed Below
 --------------------------------------------------\n\n""")
 # Prints all reports after they are produced.
+
+
 def all_reports():
     # Prints out all reports in order.
     # All the data is passed through data_fromSQL_clean function first
@@ -29,6 +31,7 @@ def all_reports():
     report_3(cur)
 
     db.close()
+
 
 def data_fromSQL_clean(d):
     # After some research, I found this method to iterate over
@@ -46,6 +49,7 @@ def data_fromSQL_clean(d):
     # Adds a space inbetween each report
     print("\n")
 
+
 def report_1(cur):
     # 1. What are the most popular three articles of all time?
     # Example: Princess Shellfish Marries Prince Handsome" - 1201 views
@@ -59,9 +63,11 @@ def report_1(cur):
     if (cur.rowcount == 0):
         print("No Results Found! Make sure database news is loaded.")
         print("""Use Command: "psql -d news -f newsdata.sql"
-                Inside the /vagrant/newsdata directory to load database "news" """)
+            Inside the /vagrant/newsdata directory to load
+            database "news" """)
     else:
         data_fromSQL_clean(cur.fetchall())
+
 
 def report_2(cur):
     # 2. Who are the most popular article authors of all time?
@@ -78,9 +84,11 @@ def report_2(cur):
     if (cur.rowcount == 0):
         print("No Results Found! Make sure database news is loaded.")
         print("""Use Command: "psql -d news -f newsdata.sql"
-                Inside the /vagrant/newsdata directory to load database "news" """)
+            Inside the /vagrant/newsdata directory to load
+            database "news" """)
     else:
         data_fromSQL_clean(cur.fetchall())
+
 
 def report_3(cur):
     # 3. On which days did more than 1 percent of requests lead to errors?
@@ -100,7 +108,8 @@ def report_3(cur):
     if (cur.rowcount == 0):
         print("No Results Found! Make sure database news is loaded.")
         print("""Use Command: "psql -d news -f newsdata.sql"
-                Inside the /vagrant/newsdata directory to load database "news" """)
+            Inside the /vagrant/newsdata directory to load
+            database "news" """)
     else:
         data_fromSQL_clean(cur.fetchall())
 
