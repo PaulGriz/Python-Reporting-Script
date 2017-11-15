@@ -1,0 +1,27 @@
+--------------------------------------------------
+     The Requested Reports Are Listed Below
+--------------------------------------------------
+
+
+1.) The 3 Most Viewed Articles:
+
+ "Candidate is jerk, alleges rival" - 338647
+ "Bears love berries, alleges bear" - 253801
+ "Bad things gone, say good people" - 170098
+
+
+2.) The 3 Most Popular Authors by Views:
+
+ "Ursula La Multa" - 507594
+ "Rudolf von Treppenwitz" - 423457
+ "Anonymous Contributor" - 170098
+
+
+3.) Days With Error Code 200 over 1%:
+
+ July 17, 2016 - 2.26%
+
+
+--------------------------------------------------
+                End of Reports
+--------------------------------------------------
